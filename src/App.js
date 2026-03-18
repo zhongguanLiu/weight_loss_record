@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
-import { Camera, Lock, Plus, Trash2, Image as ImageIcon, ShieldCheck, CheckCircle2, Download, Upload, HardDrive, Activity, Settings, X, ChevronRight, History, Zap, CalendarDays, Coffee, Utensils, Flame, Leaf, Target, Ban, Bot, Terminal } from 'lucide-react';
+import { Camera, Lock, Plus, Image as ImageIcon, ShieldCheck, CheckCircle2, Download, Upload, HardDrive, Activity, Settings, X, Zap, CalendarDays, Flame, Leaf, Target, Ban, Bot, Terminal } from 'lucide-react';
 
 // ==========================================
 // IndexedDB 本地数据库封装
@@ -120,7 +120,6 @@ export default function App() {
   
   // UI 状态
   const [showSettings, setShowSettings] = useState(false);
-  const [showAllHistory, setShowAllHistory] = useState(false);
 
   // 刚需状态：用户身体数据与目标
   const [targetWeight, setTargetWeight] = useState(localStorage.getItem('fitness_target_weight') || '');
@@ -321,18 +320,6 @@ export default function App() {
       alert("保存失败，可能存储空间不足");
     } finally {
       setIsSubmitting(false);
-    }
-  };
-
-  const deleteLog = async (id) => {
-    if (!window.confirm("确定删除这条记录吗？")) return;
-    try {
-      await deleteLogFromDB(id);
-      const newLogs = logs.filter(l => l.id !== id);
-      setLogs(newLogs);
-      if (flipIndex >= newLogs.length) setFlipIndex(Math.max(0, newLogs.length - 1));
-    } catch (err) { 
-      console.error("删除失败:", err); 
     }
   };
 
