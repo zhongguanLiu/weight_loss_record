@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+🦾 BODY-OS | 赛博朋克风减脂追踪系统
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+"System is monitoring your metabolic engine." —— Sarcasm_Protocol_v2.33
 
-## Available Scripts
+BODY-OS (Metabolic Sync) 是一款基于 React 构建的本地化、隐私至上的赛博朋克风体重管理与碳循环追踪应用。把你的身体当作一台精密运转的机甲，用极客的方式完成装甲切割（减脂）任务。
 
-In the project directory, you can run:
+🌐 在线体验 (Live Demo)
 
-### `npm start`
+👉 点击此处立即启动 BODY-OS 👈
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🔰 小白专属通道 (For Beginners)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Q: 我完全不懂编程，怎么在我的手机/电脑上使用？
 
-### `npm test`
+A: 直接点击上方链接即可使用，无需下载任何软件！ 你只需要在微信或手机浏览器中打开这个网址：https://starlit-platypus-399b1f.netlify.app/
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Q: 我用你的链接，你能看到我的隐私照片和体重吗？
 
-### `npm run build`
+A: 绝对看不到！ 本系统采用 Local-First（纯本地化）技术架构。你录入的所有数据、照片和密码，都会死死锁在你当前手机的浏览器本地缓存里，根本不会上传到互联网。哪怕一万个人都在点这个链接，大家的数据也是完全物理隔离的，请一万个放心使用。
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+🕹️ 核心操作指南 (How to Use)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+当你打开链接后，请按以下步骤完成机体引擎的初始化：
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+初次激活： 首次打开，系统会要求你输入 4 位数字口令。这是为了防止身边人偷看你手机而设置的本地启动锁。
 
-### `npm run eject`
+设定目标： 点击右上角的 ⚙️ (设置) 图标，输入你的当前身高和目标体重（Target Mass），以激活各项进度指标。
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+沉浸模式（强烈建议）：
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+iOS (苹果) 用户： 在 Safari 浏览器中打开链接，点击底部中间的「分享」按钮，选择**「添加到主屏幕」**。
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+安卓用户： 在 Chrome 等浏览器中，点击菜单栏的**「添加到手机桌面」**。
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+从桌面图标进入应用，你将获得完美避开灵动岛和底部小白条的原生、无边框全屏体验！
 
-## Learn More
+日常运转： 每天录入你的体重数据和打卡照片（可选）。系统会自动感知当前是星期几，并为你下发专属的碳循环营养补给策略。
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+✨ 核心特性 (Core Features)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+🤖 毒舌 AI 副官 (Sarcasm_Protocol_v2.33)
+系统会根据你最近的质量波动进行智能判定。变瘦了？系统会夸你成功卸载劣质装甲。吃胖了？准备好迎接 AI 副官的无情嘲讽吧。
 
-### Code Splitting
+🥩 自动碳循环引擎 (Auto Carb-Cycling)
+专为减脂党/学生党设计。系统会自动识别当前星期，下发当天的【核心原则】、【推荐摄入】与【绝对禁忌】（高碳日/低碳日/无碳日无缝切换）。
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+📊 全息动态图表 (Holo-Dashboard)
+内置基于 recharts 的霓虹光效趋势面积图，以及动态光斑背景，提供沉浸式的赛博UI体验。
 
-### Analyzing the Bundle Size
+📸 蜕变时光机 (Visual Log)
+不仅仅是数字，支持上传打卡照片，并通过滑块直观对比机体轻量化（减脂）前后的视觉差距。
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+💾 便携式存档 (Backup & Restore)
+⚠️ 注意： 因为数据不上传云端，如果清理了手机缓存或换新手机，数据会丢失！请务必定期点击右上角的 ⬇️ (下载) 按钮导出备份。换手机后点击 ⬆️ (上传) 即可无损恢复。
 
-### Making a Progressive Web App
+🚀 自行部署 (Deploy Your Own)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+如果你是一名开发者，想拥有属于自己的专属版本，可以通过 Netlify / Vercel 等平台关联你的 GitHub 仓库进行一键零配置静态部署。
 
-### Advanced Configuration
+生产环境打包命令: CI=false npm run build
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+部署目录: build
 
-### Deployment
+🛠️ 本地开发 (Local Development)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+环境依赖
 
-### `npm run build` fails to minify
+请确保你的本地环境已安装 Node.js。
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. 克隆仓库
+
+git clone [https://github.com/你的用户名/weight_loss_record.git](https://github.com/你的用户名/weight_loss_record.git)
+cd weight_loss_record
+
+
+2. 安装依赖包
+
+npm install
+
+
+(核心依赖: react, recharts, lucide-react, tailwindcss)
+
+3. 启动反应堆 (运行项目)
+
+npm start
+
+
+4. 生产环境构建
+
+npm run build
+
+
+⚠️ 免责声明 (Disclaimer)
+
+本应用的碳循环食谱和 AI 评价仅供娱乐和参考，不构成专业医疗建议。机体改造过程请量力而行，如遇核心温度过高（发烧）或能量枯竭（低血糖），请立即停止并寻求医疗辅助。
+
+Built with React & ☕ & 🦾
